@@ -32,7 +32,7 @@ const projects =[
                 <Row>
                     
                     <h1 className="ptitle">Projects</h1>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                    <p>These are the projects I have worked on, some are still under development.<br></br> Please view them and provide some feedback.</p>
                     
                     <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
