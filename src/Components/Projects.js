@@ -27,6 +27,8 @@ const projects =[
 ];
 
     return(
+      <>
+      <div className='Container'>
         <section className="project" id="project">
             <Container>
                 <Row>
@@ -66,6 +68,7 @@ const projects =[
                 </Row>
             </Container>
         </section>
-
+        </div>
+        </>
     );
   }

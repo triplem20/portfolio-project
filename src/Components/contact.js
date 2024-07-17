@@ -31,6 +31,7 @@ export const Contact= () => {
 
     return(
         <>
+        <div className='Container'>
 <h1 id="connect">Let's Connect!</h1>
 
 <div class="containerc">
@@ -65,7 +66,7 @@ export const Contact= () => {
   </div>
   </form>
 </div>
-
+</div>
 
 <nav className='footer-nav'>
             <Link to='/' className="nav-item">Home</Link>
@@ -73,6 +74,7 @@ export const Contact= () => {
             <Link to='projects' className="nav-item">Projects</Link>
             <Link to='contact' className="nav-item">Contact</Link>
             </nav>
+            
             </>
     );
 };

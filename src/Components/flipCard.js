@@ -9,7 +9,7 @@ function Main(){
   const [text, setText] = useState(''); // Letter displayed
   const displayedWd= ["Frontend Developer", "Flutter Developer"]; //words to be displayed
   const period = 2000; //amount of time between each word
-  const [delta, setDelta] = useState(300 - Math.random() * 200); //amount of time between each letter
+  const [delta, setDelta] = useState(300 - Math.random() * 300); //amount of time between each letter
 
 
   useEffect(() => { 
@@ -43,7 +43,7 @@ function Main(){
     return (
    <>
    
-   <div>
+   <div className='Container'>
         <div className="flip-card">
           <div className="flip-card-inner">
             <div className="flip-card-front">

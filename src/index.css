@@ -19,6 +19,24 @@ code {
 }
 
 
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Apply animation to container */
+.Container {
+  animation: fadeInUp 1s ease-out;
+}
+
+/*home*/
+
 .flip-card {
   background-color: transparent;
   width: 270px;
