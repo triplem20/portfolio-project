@@ -73,7 +73,21 @@ code {
   transition: transform 0.6s;
   transform-style: preserve-3d;
   box-shadow: 0 40px 8px 0 rgba(0,0,0,0.8);
+  animation: changeBorderRadius 3s infinite; 
 }
+
+@keyframes changeBorderRadius {
+  0% {
+    border-radius: 0;
+  }
+  50% {
+    border-radius: 50%; 
+  }
+  100% {
+    border-radius: 0; 
+  }
+}
+
 
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
