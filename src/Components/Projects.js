@@ -1,25 +1,25 @@
 import React from 'react';
 import { Col, Container, Row, Tab, Nav } from 'react-bootstrap';
 import { ProjectTile } from './projectTile';
-import projimg1 from '../assets/img/projimg1.jpeg';
-import projimg2 from '../assets/img/projimg2.jpeg';
-import projimg3 from '../assets/img/projimg3.jpeg';
+import projimg1 from '../assets/img/logo1.jpg';
+import projimg2 from '../assets/img/weather_logo.png';
+import projimg3 from '../assets/img/destiny_logo.png';
 
 export const Projects = () => {
   const projects = [
     {
       title: 'Cleaning Service Mobile App with Admin',
-      description: 'A description',
+      description: '  A web application module, which enables you to manage services by adding, updating, and deleting those services. And other features such as accepting and rejecting customers requests coming from the mobile application. And integrated with a mobile Application module. ',
       imgUrl: projimg1,
     },
     {
-      title: 'Project 2',
-      description: 'A description',
+      title: 'Weather Forecast',
+      description: '  A weather forecast application module that gives the user the temprature and other weather details at their current location, and also at a selected city or location.  ',
       imgUrl: projimg2,
     },
     {
-      title: 'Project 3',
-      description: 'A description',
+      title: 'The Unkown',
+      description: '  Story-based game which provides the user with nultiple story options.  ',
       imgUrl: projimg3,
     },
   ];
@@ -32,7 +32,7 @@ export const Projects = () => {
             <Col xs={12}>
               <h1 className='ptitle'>Projects</h1>
               <p>
-                These are the projects I have worked on, some are still under development. Please view them and provide some feedback.
+                These are the projects I have worked on, some are still under development. Please view them on my Github account and provide some feedback.
               </p>
             </Col>
           </Row>
