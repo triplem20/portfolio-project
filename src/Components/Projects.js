@@ -13,7 +13,7 @@ export const Projects = () => {
       imgUrl: projimg1,
     },
     {
-      title: 'Weather Forecast',
+      title: 'Sky Watch',
       description: '  A weather forecast application module that gives the user the temprature and other weather details at their current location, and also at a selected city or location.  ',
       imgUrl: projimg2,
     },
