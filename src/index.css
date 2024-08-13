@@ -1,5 +1,11 @@
+:root{
+  color: light dark;
+}
+
 body {
   margin: 20px;
+  background-color: light-dark(#fff #444);
+  color: light-dark(#444 #fff);
   font-size: 16px;
   background-image: url("background1.webp");
   background-size: cover;
@@ -151,11 +157,12 @@ code {
 }
 /*navbar*/
 nav {
+
   list-style-type: none;
   margin-top: 5px;
   margin-left: 38%;
   padding: 0;
-  position: relative;
+  position: sticky;
   overflow: hidden;
   
 }
