@@ -398,13 +398,19 @@ filter: brightness(1%0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-ro
 
 
 .flip-card-proj {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
   background-color: transparent;
   height: 350px; 
   perspective: 1000px;
-    border-radius: 64px;
-    text-align: center;
-    padding: 60px 50px;
-    margin-top: 10px;
+  border-radius: 64px;
+  padding: 60px 50px;
+  margin-top: 10px;
+  
   
 }
 

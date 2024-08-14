@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Col, Container, Row, Tab, Nav } from 'react-bootstrap';
 import Carousel from "react-multi-carousel";
 import 'react-multi-carousel/lib/styles.css'; // Ensure to include this for carousel styles
 import projimg1 from '../assets/img/logo1.jpg';
 import projimg2 from '../assets/img/weather_logo.png';
 import projimg3 from '../assets/img/destiny_logo.png';
+import proj4 from '../assets/img/football_quiz.png';
 
 export const Projects = () => {
+  const primarySectionRef = useRef(null);
+  const secondarySectionRef = useRef(null);
+  const otherSectionRef = useRef(null);
+
+  const scrollToSection = (sectionRef) => {
+    sectionRef.current.scrollIntoView({ behavior: 'smooth' });
+  };
 
   const responsive = {
     desktop: {
@@ -26,7 +34,7 @@ export const Projects = () => {
     }
   };
 
-  const projects = [
+  const primaryProjects = [
     {
       title: 'Cleaning Service Mobile App with Admin',
       description: 'A web application module, which enables you to manage services by adding, updating, and deleting those services. And other features such as accepting and rejecting customers requests coming from the mobile application. And integrated with a mobile Application module.',
@@ -37,10 +45,19 @@ export const Projects = () => {
       description: 'A weather forecast application module that gives the user the temperature and other weather details at their current location, and also at a selected city or location.',
       imgUrl: projimg2,
     },
+    
+  ];
+
+  const secondaryProjects = [
     {
       title: 'The Unknown Adventure',
       description: 'Story-based game which provides the user with multiple story options, and each continues according to the choices made by the user.',
       imgUrl: projimg3,
+    },
+    {
+      title: 'The Football Quiz',
+      description: 'A football-based quiz game which includes multiple true or false questions of different categories.',
+      imgUrl: proj4,
     },
   ];
 
@@ -56,7 +73,15 @@ export const Projects = () => {
               </p>
             </Col>
           </Row>
-          <Tab.Container id='projects-tabs' defaultActiveKey='first'>
+          <Tab.Container
+            id='projects-tabs'
+            defaultActiveKey='first'
+            onSelect={(selectedKey) => {
+              if (selectedKey === 'first') scrollToSection(primarySectionRef);
+              if (selectedKey === 'second') scrollToSection(secondarySectionRef);
+              if (selectedKey === 'third') scrollToSection(otherSectionRef);
+            }}
+          >
             <Nav variant='pills' className='nav-pills mb-5 justify-content-center'>
               <Nav.Item>
                 <Nav.Link eventKey='first'>Primary Projects</Nav.Link>
@@ -71,39 +96,58 @@ export const Projects = () => {
 
             <Tab.Content>
               <Tab.Pane eventKey='first'>
-                <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                  {projects.map((project, index) => (
-                    <div key={index} className="flip-card-proj">
-                      <div className="flip-card-inner-proj">
-                        <div className="flip-card-front-proj">
-                          <img className="projimg" src={project.imgUrl} alt={project.title} />
-                          <h5 className="projecttle">{project.title}</h5>
-                        </div>
-                        <div className="flip-card-back-proj">
-                          <h4 className="projdes">{project.description}</h4>
+                <div ref={primarySectionRef}>
+                  <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
+                    {primaryProjects.map((project, index) => (
+                      <div key={index} className="flip-card-proj">
+                        <div className="flip-card-inner-proj">
+                          <div className="flip-card-front-proj">
+                            <img className="projimg" src={project.imgUrl} alt={project.title} />
+                            <h5 className="projecttle">{project.title}</h5>
+                          </div>
+                          <div className="flip-card-back-proj">
+                            <h4 className="projdes">{project.description}</h4>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  ))}
-                </Carousel>
+                    ))}
+                  </Carousel>
+                </div>
               </Tab.Pane>
 
               <Tab.Pane eventKey='second'>
-                <h2>Secondary Projects</h2>
-                <p>
-                 Still Under Development...
-                  This section will showcase projects that are currently in progress or in the conceptual phase. Stay tuned for updates!
-                </p>
+              <h2>Secondary Projects</h2>
+                  <p>
+                  These projects are ongoing or experimental works, exploring new ideas and technologies. While still in development, they highlight creative approaches and evolving solutions.
+                   </p>
+                <div ref={secondarySectionRef}>
+                  <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
+                    {secondaryProjects.map((project, index) => (
+                      <div key={index} className="flip-card-proj">
+                        <div className="flip-card-inner-proj">
+                          <div className="flip-card-front-proj">
+                            <img className="projimg" src={project.imgUrl} alt={project.title} />
+                            <h5 className="projecttle">{project.title}</h5>
+                          </div>
+                          <div className="flip-card-back-proj">
+                            <h4 className="projdes">{project.description}</h4>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </Carousel>
+                </div>
               </Tab.Pane>
 
               <Tab.Pane eventKey='third'>
-                <h2>Other Projects</h2>
-                <p>
-                  Here you can find a collection of various other projects that do not fit into the primary categories but are still worth mentioning. Some might be side projects, experiments, or older works.
-                </p>
+                <div ref={otherSectionRef}>
+                  <h2>Other Projects</h2>
+                  <p>
+                    Here you can find a collection of various other projects that do not fit into the primary categories but are still worth mentioning. Some might be side projects, experiments, or older works.
+                  </p>
+                </div>
               </Tab.Pane>
             </Tab.Content>
-
           </Tab.Container>
         </Container>
       </section>
