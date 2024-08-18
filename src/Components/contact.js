@@ -87,12 +87,12 @@ export const Contact = () => {
         </div>
       </div>
 
-      <nav className='footer-nav'>
+      {/* <nav className='footer-nav'>
         <Link to='/' className="nav-item">Home</Link>
         <Link to='About' className="nav-item">About</Link>
         <Link to='projects' className="nav-item">Projects</Link>
         <Link to='contact' className="nav-item">Contact</Link>
-      </nav>
+      </nav> */}
 
       <ToastContainer />
     </>
