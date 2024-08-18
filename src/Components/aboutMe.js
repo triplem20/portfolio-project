@@ -32,7 +32,7 @@ function AboutMe(){
     
     
     return (
-    <div className='Containera' >
+    <div className='Container' >
 <h1 id="About">About Me</h1>
 <br/>
 <section className="skill" id="skills">
