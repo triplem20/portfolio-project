@@ -1,24 +1,30 @@
-
 import { useEffect, useState } from 'react';
 import profile from '../assets/img/profile2.jpeg';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-function Main(){
-
+function Main() {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState(''); // Letter displayed
-  const displayedWd= ["Web Developer", "Flutter Developer"]; //words to be displayed
-  const period = 2000; //amount of time between each word
-  const [delta, setDelta] = useState(300 - Math.random() * 700); //amount of time between each letter
+  const displayedWd = ["Web Developer", "Flutter Developer"]; // Words to be displayed
+  const period = 2000; // Amount of time between each word
+  const [delta, setDelta] = useState(300 - Math.random() * 700); // Amount of time between each letter
 
+  // Display a message when the component mounts
+  useEffect(() => {
+    toast.info('Welcome! Please Rotate the screen if Using Your phone.', {
+      position: 'top-right'
+    });
+  }, []);
 
-  useEffect(() => { 
+  useEffect(() => {
     let ticker = setInterval(() => {
       tick();
     }, delta);
 
     return () => { clearInterval(ticker) };
-  }, [text])
+  }, [text, delta]); // Include delta in dependencies to update interval if delta changes
 
   const tick = () => {
     let i = loopNum % displayedWd.length;
@@ -38,29 +44,31 @@ function Main(){
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
       setDelta(500);
-    } 
-  }
-    return (
-   <>
-   
-   <div className='Container'>
+    }
+  };
+
+  return (
+    <>
+      <div className='Container'>
         <div className="flip-card">
           <div className="flip-card-inner">
             <div className="flip-card-front">
-              <img className="profileimg" src={profile}></img>
-              <h3 id="home" ><span className="wrap">{text}</span></h3>
+              <img className="profileimg" src={profile} alt="Profile" />
+              <h3 id="home"><span className="wrap">{text}</span></h3>
               <h2 className="name">Mustafa Mansour</h2>
               <h4 className='thatg'>We love that guy!</h4>
             </div>
-            <div class="flip-card-back">
+            <div className="flip-card-back">
               <h4 className="para">An information Technology Graduate seeking a position in a dynamic organization to launch my career and work towards enhancing my set of skills.</h4>
             </div>
           </div>
         </div>
-      </div></>
+      </div>
 
-    
-    );
+      {/* ToastContainer should be placed here */}
+      <ToastContainer />
+    </>
+  );
 }
 
 export default Main;

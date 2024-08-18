@@ -24,7 +24,6 @@ function NavBar(){
     return(
        <>
        <h1 className='message'>Good {message}! </h1>
-       <h5>Please Rotate Screen If Using Phone</h5>
        <nav>
             <Link to='/' className="nav-item">Home</Link>
             <Link to='About' className="nav-item">About</Link>
