@@ -9,24 +9,27 @@ export const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
+    
+    console.log(form.current); // Log form data
+    
     emailjs.sendForm('service_q2n4ogx', 'template_qd0izyj', form.current, 'GHD603Z-lPDtcT2Qp')
       .then(
         (result) => {
           console.log('SUCCESS!', result.text);
-          toast.success('Your message has been sent successfully!', {
+          toast.success('Your Request has been sent successfully!', {
             position: 'top-right'
           });
           form.current.reset();
         },
         (error) => {
           console.log('FAILED...', error.text);
-          toast.error('There was an error sending your message. Please try again.', {
+          toast.error('There was an error sending your Request. Please try again.', {
             position: 'top-right'
           });
         }
       );
   };
+  
 
   return (
     <>
