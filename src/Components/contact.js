@@ -1,6 +1,8 @@
 import React, { useRef } from 'react';
-import emailjs from 'emailjs-com'; // Ensure you have emailjs-com installed
+import emailjs from 'emailjs-com';
 import { Link } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const Contact = () => {
   const form = useRef();
@@ -12,12 +14,16 @@ export const Contact = () => {
       .then(
         (result) => {
           console.log('SUCCESS!', result.text);
-          alert('Your message has been sent successfully!');
-          form.current.reset(); // Reset form after successful submission
+          toast.success('Your message has been sent successfully!', {
+            position: 'top-right'
+          });
+          form.current.reset();
         },
         (error) => {
           console.log('FAILED...', error.text);
-          alert('There was an error sending your message. Please try again.');
+          toast.error('There was an error sending your message. Please try again.', {
+            position: 'top-right'
+          });
         }
       );
   };
@@ -84,6 +90,8 @@ export const Contact = () => {
         <Link to='projects' className="nav-item">Projects</Link>
         <Link to='contact' className="nav-item">Contact</Link>
       </nav>
+
+      <ToastContainer />
     </>
   );
 };
