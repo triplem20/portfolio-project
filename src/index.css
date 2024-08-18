@@ -665,10 +665,10 @@ input[type=text], input[type=email], select, textarea {
   font-weight: 700;
   color: #322e2e;
   border: 2px solid #fff;
-  padding: 5px 0px;
+  padding: 5px 5px;
   font-size: 18px;
   padding-top: 10px;
-  margin-left: 2%;
+  margin-left: 5%;
 	background-color: transparent;
 	transition: 0.3s ease-in-out;
   text-align: center;
