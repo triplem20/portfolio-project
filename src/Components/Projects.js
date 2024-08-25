@@ -6,6 +6,7 @@ import projimg1 from '../assets/img/logo1.jpg';
 import projimg2 from '../assets/img/weather_logo.png';
 import projimg3 from '../assets/img/destiny_logo.png';
 import proj4 from '../assets/img/football_quiz.png';
+import proj5 from'../assets/img/chatty_logo.png';
 
 export const Projects = () => {
   const primarySectionRef = useRef(null);
@@ -59,6 +60,12 @@ export const Projects = () => {
       description: 'A football-based quiz game which includes multiple true or false questions of different categories.',
       imgUrl: proj4,
     },
+    {
+      title: 'Chatty',
+      description: 'A messaging mobile application module integerated with firebase database, in which users register and create accounts to chat with other users online.',
+       imgUrl: proj5,
+    },
+
   ];
 
   return (
