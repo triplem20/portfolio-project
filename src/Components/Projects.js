@@ -129,7 +129,9 @@ export const Projects = () => {
               </Tab.Pane>
 
               <Tab.Pane eventKey='second'>
-              
+                  <br></br>
+                  <br></br>
+                  <br></br>
                   <p>
                   These projects are ongoing or experimental works, exploring new ideas and technologies. While still in development, they highlight creative approaches and evolving solutions.
                    </p>
@@ -154,7 +156,9 @@ export const Projects = () => {
 
               <Tab.Pane eventKey='third'>
                 <div ref={otherSectionRef}>
-                  
+                  <br></br>
+                  <br></br>
+                  <br></br>
                   <p>
                     Here you can find a collection of various other projects that do not fit into the primary categories but are still worth mentioning. Some might be side projects, experiments, or older works.
                   </p>
