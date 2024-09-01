@@ -7,6 +7,7 @@ import projimg2 from '../assets/img/weather_logo.png';
 import projimg3 from '../assets/img/destiny_logo.png';
 import proj4 from '../assets/img/football_quiz.png';
 import proj5 from'../assets/img/chatty_logo.png';
+import proj6 from '../assets/img/checkmate_logo.png';
 
 export const Projects = () => {
   const primarySectionRef = useRef(null);
@@ -64,6 +65,11 @@ export const Projects = () => {
       title: 'Chatty',
       description: 'A messaging mobile application module integerated with firebase database, in which users register and create accounts to chat with other users online.',
        imgUrl: proj5,
+    },
+    {
+      title: 'CheckMate',
+      description: 'A todo mobile application module in which users can add delete and update their tasks status.',
+       imgUrl: proj6,
     },
 
   ];
