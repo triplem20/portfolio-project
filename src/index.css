@@ -193,7 +193,6 @@ nav {
   font-weight: 700;
   color: #fff;
   border: 1px solid #fff;
-  padding: 18px 34px;
   font-size: 15px;
   margin: auto;
   position: relative;
@@ -202,7 +201,7 @@ nav {
   display: block;
   color: rgb(31, 51, 58);
   text-align: center;
-  padding: 14px 16px;
+  padding: 10px 16px;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
