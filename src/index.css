@@ -165,9 +165,10 @@ code {
   margin-top: 0px;
   margin-bottom: 10px;
 }
+
+
 /*navbar*/
 nav {
-
   list-style-type: none;
   margin-top: 5px;
   margin-left: 38%;
@@ -187,24 +188,45 @@ nav {
   float: left;
 
 }
-
-.nav-item{
-  float: left;
-}
-
 .nav-item {
+  float: left;
+  font-weight: 700;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 18px 34px;
+  font-size: 18px;
+  margin: auto;
+  position: relative;
+  background-color: transparent;
   border-radius: 20px;
   display: block;
   color: rgb(31, 51, 58);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-item::before {
+  content: "";
+  width: 0%; 
+  height: 3px; 
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  bottom: 0; 
+  z-index: -1;
+  transition: width 0.3s ease-in-out; 
 }
 
 .nav-item:hover {
-  
-  background-color: #d8d8d8;
+  color: #121212;
 }
+
+.nav-item:hover::before {
+  width: 100%; 
+}
+
 
 .social-icon {
   display: inline-block;
