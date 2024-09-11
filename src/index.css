@@ -218,7 +218,22 @@ nav {
   z-index: -1;
   transition: width 0.3s ease-in-out; 
 }
+.nav-item::after {
+  content: "";
+  width: 0%; 
+  height: 3px; 
+  position: absolute;
+  background-color: #fff;
+  right: 0; 
+  top: 0;
+  z-index: -1;
+  transition: width 0.3s ease-in-out; /* Animate height */
+}
 
+
+.nav-item:hover::after {
+  width: 100%; /* Expand the vertical line height on hover */
+}
 .nav-item:hover {
   color: #121212;
 }
