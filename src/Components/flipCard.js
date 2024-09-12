@@ -59,7 +59,7 @@ function Main() {
               <h4 className='thatg'>We love that guy!</h4>
             </div>
             <div className="flip-card-back">
-              <h4 className="para">An information Technology Graduate seeking a position in a dynamic organization to launch my career and work towards enhancing my set of skills.</h4>
+              <h4 className="para">An Information Technology graduate with a background in programming, networking, and system management. Seeking internships and collaborative projects to drive innovation and expand my expertise. Passionate about problem-solving, contributing to fresh ideas, and staying ahead of emerging technologies.</h4>
             </div>
           </div>
         </div>
