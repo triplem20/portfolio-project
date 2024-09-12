@@ -23,7 +23,7 @@ body {
   }
 }
 
-/* Other styles remain the same but cleaned up */
+
 
 html{
   scroll-behavior: smooth;
@@ -46,7 +46,7 @@ code {
   }
 }
 
-/* Apply animation to container */
+
 .Container {
   animation: fadeInUp 1s ease-out;
 }
@@ -192,7 +192,6 @@ nav {
   float: left;
   font-weight: 700;
   color: #fff;
-  border: 1px solid #fff;
   font-size: 15px;
   margin: auto;
   position: relative;
@@ -226,12 +225,12 @@ nav {
   right: 0; 
   top: 0;
   z-index: -1;
-  transition: width 0.3s ease-in-out; /* Animate height */
+  transition: width 0.3s ease-in-out; 
 }
 
 
 .nav-item:hover::after {
-  width: 100%; /* Expand the vertical line height on hover */
+  width: 100%; 
 }
 .nav-item:hover {
   color: #121212;
@@ -606,10 +605,8 @@ filter: brightness(1%0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-ro
 
 
 
-
-
-
 /*contact*/
+
 #connect{
   margin-top: 35px;
   margin-left: 25%;
@@ -663,7 +660,7 @@ filter: brightness(1%0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-ro
   border: 1px solid #fff;
   padding: 18px 34px;
   font-size: 18px;
-  margin:auto;
+  margin-top: 5px;
 	position: relative;
 	background-color: transparent;
 	transition: 0.3s ease-in-out;
@@ -739,7 +736,7 @@ label {
   margin-top: 6px;
 }
 
-/* Clear floats after the columns */
+
 .row::after {
   content: "";
   display: table;
