@@ -34,21 +34,20 @@ body {
 
   /* Flip cards responsiveness */
   .flip-card {
-    width: 100%; 
-    height: 100%;
-    margin-left: 10%; 
-    margin-top: 20px;
+    width: 90%; /* Slightly smaller than 100% to allow for margin */
+    min-width: 300px; /* Ensure it doesn’t shrink too small */
+    height: auto; /* Adjust based on content */
+    margin: 10px auto; /* Center it and reduce margin */
+    max-height: 500px; /* Prevent it from growing too large */
   }
 
   .flip-card-inner {
-    
     height: auto; /* Let height adjust based on content */
   }
 
   /* Adjust text and spacing */
   .para {
     font-size: 12px;
-     
   }
 
   /* Adjust profile image */
@@ -64,14 +63,13 @@ body {
   }
 
   .flip-card-front, .flip-card-back {
+    width: 100%;
     font-size: 12px;
-    height: 100%;
-   
   }
 
   /* Navbar responsiveness */
   nav {
-    flex-direction: row;
+    flex-direction: column; /* Stack items vertically on mobile */
     align-items: flex-start;
     padding: 5px; 
   }
@@ -84,9 +82,9 @@ body {
 
   /* Social icons adjustments */
   .social-icon {
-    margin-left: 0;
-    margin-top: 10px;
+    margin: 10px 0; /* Add vertical margin */
     text-align: left;
+    display: block; /* Ensure it takes full width */
   }
 
   /* Buttons and text in nav */
@@ -118,8 +116,6 @@ body {
   }
 
   /* Footer navigation adjustments */
-  
-
   .footer-nav .nav-item {
     border-left: none;
     display: block;
@@ -139,12 +135,19 @@ body {
     font-size: 32px;
   }
 
-  
+  .cv {
+    display: flex; /* Align CV button in the center */
+    justify-content: left; /* Center it horizontally */
+    margin-top: 10px; /* Space above the CV button */
+  }
+
   .cv a {
     font-size: 14px;
     padding: 12px 28px;
+    display: inline-block; /* Ensure the button size is consistent */
   }
 }
+
 
 
 html{
