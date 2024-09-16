@@ -34,7 +34,7 @@ code {
 }
 
 /* Global adjustments for mobile phones */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
   
   /* Body adjustments */
   body {
@@ -42,17 +42,22 @@ code {
     font-size: 14px;
   }
 
+  .Container{
+    margin-left: 5%;
+   
+  }
+
   /* Flip cards responsiveness */
   .flip-card {
     width: 90%; 
     min-width: 300px; 
     height: auto; 
-    margin: 10px auto; 
+    margin-left: 5%;
     max-height: 500px; 
   }
 
   .flip-card-inner {
-    height: auto; /* Let height adjust based on content */
+    height: auto; 
   }
 
   /* Adjust text and spacing */
@@ -78,8 +83,8 @@ code {
   }
 
   /* Navbar responsiveness */
-  nav {
-    flex-direction:column; 
+  nav > .nav-item {
+    flex-direction:row; 
     align-items:start;
     padding: 5px; 
   }
@@ -92,9 +97,9 @@ code {
 
   /* Social icons adjustments */
   .social-icon {
-    margin: 10px 0; /* Add vertical margin */
+    margin: 10px 0; 
     text-align: left;
-    display: block; /* Ensure it takes full width */
+    display: block; 
   }
 
   /* Buttons and text in nav */
@@ -134,11 +139,12 @@ code {
 
   /* Skill section adjustments */
   .skill-bx {
+    margin-right: 5px;
     padding: 30px 20px;
   }
 
   .skill-slider .item img {
-    width: 70%;
+    width: 100%;
   }
 
   .skill h2 {
@@ -485,7 +491,7 @@ nav {
     color: #fff;
   }
   .skill {
-    padding: 0 0 50px 0;
+    
     position: relative;
   }
   .skill .item {
@@ -918,6 +924,3 @@ button[type=submit]:active {
     margin-bottom: 20%;
   }
 }
-
-
-
