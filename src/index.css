@@ -23,6 +23,128 @@ body {
   }
 }
 
+/* Global adjustments for mobile phones */
+@media only screen and (max-width: 480px) {
+  
+  /* Body adjustments */
+  body {
+    margin: 10px;
+    font-size: 14px;
+  }
+
+  /* Flip cards responsiveness */
+  .flip-card {
+    width: 100%; 
+    height: 100%;
+    margin-left: 10%; 
+    margin-top: 20px;
+  }
+
+  .flip-card-inner {
+    
+    height: auto; /* Let height adjust based on content */
+  }
+
+  /* Adjust text and spacing */
+  .para {
+    font-size: 12px;
+     
+  }
+
+  /* Adjust profile image */
+  .profileimg {
+    width: 60%;
+    height: auto; 
+  }
+
+  /* Flip card images and content */
+  .projimg {
+    width: 80px;
+    height: 80px;
+  }
+
+  .flip-card-front, .flip-card-back {
+    font-size: 12px;
+    height: 100%;
+   
+  }
+
+  /* Navbar responsiveness */
+  nav {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 5px; 
+  }
+
+  .nav-item {
+    padding: 8px 10px;
+    font-size: 14px;
+    text-align: left;
+  }
+
+  /* Social icons adjustments */
+  .social-icon {
+    margin-left: 0;
+    margin-top: 10px;
+    text-align: left;
+  }
+
+  /* Buttons and text in nav */
+  .navbar-text button {
+    width: 100%; 
+    padding: 12px 0;
+    font-size: 16px;
+  }
+
+  /* Project section adjustments */
+  .project {
+    padding: 20px 0;
+  }
+
+  .project h2 {
+    font-size: 32px;
+  }
+
+  .project p {
+    font-size: 14px;
+    width: 90%; /* Take more space */
+  }
+
+  /* About section adjustments */
+  #About, .ptitle, #connect {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 22px; 
+  }
+
+  /* Footer navigation adjustments */
+  
+
+  .footer-nav .nav-item {
+    border-left: none;
+    display: block;
+    margin: 10px 0;
+  }
+
+  /* Skill section adjustments */
+  .skill-bx {
+    padding: 30px 20px;
+  }
+
+  .skill-slider .item img {
+    width: 70%;
+  }
+
+  .skill h2 {
+    font-size: 32px;
+  }
+
+  
+  .cv a {
+    font-size: 14px;
+    padding: 12px 28px;
+  }
+}
 
 
 html{
@@ -116,7 +238,8 @@ code {
 
 .flip-card-back {
   background-image: url('./assets/img/treepic.jpeg');
-  background-size: cover;
+  overflow-y: scroll;
+  background-size:cover;
   background-color: #bbb;
   color: white;
   transform: rotateY(180deg);
@@ -153,55 +276,7 @@ code {
   margin-bottom: 10px;
 }
 
-/* Responsive adjustments */
-@media only screen and (max-width: 768px) {
-  .flip-card {
-    width: 70%; 
-    margin-left: 10%; 
-    margin-top: 50px; 
-  }
-  
-  .para {
-    padding-top: 20px;
-    font-size: 14px; 
-  }
 
-  .name {
-    font-size: 16px; 
-    padding: 8px;
-  }
-
-  .profileimg {
-    width: 50%; 
-    height: auto; 
-  }
-  .message{
-    top: 10%;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .flip-card {
-    width: 60%; 
-    margin-left: 30%; 
-    margin-top: 20px; 
-  }
-
-  .para {
-    padding-left: 5px;
-    padding-right: 5px;
-    font-size: 12px; 
-  }
-
-  .name {
-    font-size: 14px; 
-  }
-
-  .profileimg {
-    width: 70%; 
-  }
-  
-}
 
 
 /*navbar*/
@@ -217,18 +292,7 @@ nav {
 
 
 
-/* Media query for smaller screens */
-@media screen and (max-width: 768px) {
-  nav {
-    flex-direction: row;
-    align-items: center;
-    margin-left:10%;
-  }
 
-  nav li {
-    margin: 10px 0; 
-  }
-}
 
 .message{
   position: relative;
@@ -375,27 +439,7 @@ nav {
   color: #474545c0;
 }
 
-/* Mobile adjustments */
-@media only screen and (max-width: 768px) {
-  
-  .social-icon {
-    display: block; 
-    margin-left: 0; 
-    margin-top: 20px; 
-    text-align: center; 
-  }
-  
-  .social-icon a {
-    margin: 8px; 
-  }
 
-  .navbar-text button {
-    margin-left: 0; 
-    margin-top: 10px; 
-    width: 100%; 
-    text-align: center; 
-  }
-}
 
 
 /*about*/
@@ -867,6 +911,7 @@ button[type=submit]:active {
     width: 80%; 
     margin-left: 10%; 
     margin-right: 10%;
+    margin-bottom: 20%;
   }
 }
 
