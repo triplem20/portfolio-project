@@ -377,22 +377,23 @@ nav {
 
 /* Mobile adjustments */
 @media only screen and (max-width: 768px) {
+  
   .social-icon {
-    display: block; /* Change to block for mobile */
-    margin-left: 0; /* Remove extra left margin */
-    margin-top: 20px; /* Add some space below the navbar */
-    text-align: center; /* Center the social icons */
+    display: block; 
+    margin-left: 0; 
+    margin-top: 20px; 
+    text-align: center; 
   }
   
   .social-icon a {
-    margin: 8px; /* Add some spacing between icons */
+    margin: 8px; 
   }
 
   .navbar-text button {
-    margin-left: 0; /* Remove left margin on buttons for mobile */
-    margin-top: 10px; /* Add spacing between navbar buttons and social icons */
-    width: 100%; /* Make buttons full-width on mobile */
-    text-align: center; /* Center the text */
+    margin-left: 0; 
+    margin-top: 10px; 
+    width: 100%; 
+    text-align: center; 
   }
 }
 
