@@ -13,7 +13,7 @@ function Main() {
 
   // Display a message when the component mounts
   useEffect(() => {
-    toast.info('Welcome! Please Rotate the screen if Using Your phone.', {
+    toast.info('Welcome! Please Rotate the screen For a better view if Using Your Mobile.', {
       position: 'top-right'
     });
   }, []);
