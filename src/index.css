@@ -16,6 +16,16 @@ body {
   background-size: cover;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: var(--background-dark);
@@ -34,11 +44,11 @@ body {
 
   /* Flip cards responsiveness */
   .flip-card {
-    width: 90%; /* Slightly smaller than 100% to allow for margin */
-    min-width: 300px; /* Ensure it doesn’t shrink too small */
-    height: auto; /* Adjust based on content */
-    margin: 10px auto; /* Center it and reduce margin */
-    max-height: 500px; /* Prevent it from growing too large */
+    width: 90%; 
+    min-width: 300px; 
+    height: auto; 
+    margin: 10px auto; 
+    max-height: 500px; 
   }
 
   .flip-card-inner {
@@ -69,8 +79,8 @@ body {
 
   /* Navbar responsiveness */
   nav {
-    flex-direction: column; /* Stack items vertically on mobile */
-    align-items: flex-start;
+    flex-direction:column; 
+    align-items:start;
     padding: 5px; 
   }
 
@@ -136,28 +146,19 @@ body {
   }
 
   .cv {
-    display: flex; /* Align CV button in the center */
-    justify-content: left; /* Center it horizontally */
-    margin-top: 10px; /* Space above the CV button */
+    display: flex; 
+    justify-content: left;
+    margin-top: 10px; 
   }
 
   .cv a {
     font-size: 14px;
     padding: 12px 28px;
-    display: inline-block; /* Ensure the button size is consistent */
+    display: inline-block; 
   }
 }
 
 
-
-html{
-  scroll-behavior: smooth;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 
 
 @keyframes fadeInUp {
