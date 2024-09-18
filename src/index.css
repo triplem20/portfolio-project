@@ -35,29 +35,30 @@ code {
 
 /* Global adjustments for mobile phones */
 @media only screen and (max-width: 500px) {
-  
+
   /* Body adjustments */
   body {
     margin: 10px;
     font-size: 14px;
   }
 
-  .Container{
+  .Container {
     margin-left: 5%;
-   
   }
 
   /* Flip cards responsiveness */
   .flip-card {
-    width: 90%; 
-    min-width: 300px; 
-    height: auto; 
-    margin-left: 5%;
-    max-height: 500px; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px; /* Set a fixed width */
+    height: 300px; /* Set a fixed height */
+    max-width: 300px; /* Prevent the card from growing beyond this size */
+    max-height: 300px;
+    margin-top: 20px; /* Adjust margin as needed */
   }
 
   .flip-card-inner {
-    height: auto; 
+    height: 100%; /* Ensure the inner card matches the flip-card height */
   }
 
   /* Adjust text and spacing */
@@ -68,7 +69,7 @@ code {
   /* Adjust profile image */
   .profileimg {
     width: 60%;
-    height: auto; 
+    height: auto;
   }
 
   /* Flip card images and content */
@@ -77,16 +78,11 @@ code {
     height: 80px;
   }
 
-  .flip-card-front, .flip-card-back {
-    width: 100%;
-    font-size: 12px;
-  }
-
   /* Navbar responsiveness */
   nav > .nav-item {
-    flex-direction:row; 
-    align-items:start;
-    padding: 5px; 
+    flex-direction: row;
+    align-items: start;
+    padding: 5px;
   }
 
   .nav-item {
@@ -97,14 +93,14 @@ code {
 
   /* Social icons adjustments */
   .social-icon {
-    margin: 10px 0; 
+    margin: 10px 0;
     text-align: left;
-    display: block; 
+    display: block;
   }
 
   /* Buttons and text in nav */
   .navbar-text button {
-    width: 100%; 
+    width: 100%;
     padding: 12px 0;
     font-size: 16px;
   }
@@ -120,15 +116,9 @@ code {
 
   .project p {
     font-size: 14px;
-    width: 90%; /* Take more space */
+    width: 90%;
   }
 
-  /* About section adjustments */
-  #About, .ptitle, #connect {
-    margin-left: 5%;
-    margin-right: 5%;
-    font-size: 22px; 
-  }
 
   /* Footer navigation adjustments */
   .footer-nav .nav-item {
@@ -136,11 +126,22 @@ code {
     display: block;
     margin: 10px 0;
   }
-
-  /* Skill section adjustments */
+  #About, .ptitle, #connect {
+    margin: auto;          /* Center horizontally */
+    font-size: 22px;
+    width: 90%;            /* Limit to 90% of screen width */
+    max-width: 400px;      /* Max width to avoid stretching */
+  }
+  
+  /* Skill section */
+  .skill {
+    margin: auto;          /* Center horizontally */
+  }
+  
   .skill-bx {
-    margin-right: 5px;
+    margin: auto;          /* Center horizontally */
     padding: 30px 20px;
+    max-width: 400px;      /* Limit width to prevent overflow */
   }
 
   .skill-slider .item img {
@@ -152,44 +153,43 @@ code {
   }
 
   .cv {
-    display: flex; 
+    display: flex;
     justify-content: left;
-    margin-top: 10px; 
+    margin-top: 10px;
   }
 
   .cv a {
     font-size: 14px;
     padding: 12px 28px;
-    display: inline-block; 
+    display: inline-block;
   }
 }
 
-
-
-
 @keyframes fadeInUp {
   from {
-      opacity: 0;
-      transform: translateY(50px);
+    opacity: 0;
+    transform: translateY(50px);
   }
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
 .Container {
-  height: 365px;
+  height: 150px;
   animation: fadeInUp 1s ease-out;
 }
 
 /*home*/
 .flip-card {
   background-color: transparent;
-  width: 20%;
-  margin-top: 100px;
-  margin-left: 40%;
-  height: 100%;
+  width: 250px; 
+  height: 300px; 
+  border: 2px solid white;
+  max-width: 300px; 
+  max-height: 300px; 
+  margin: 50px auto; 
   animation: updown 3s linear infinite;
 }
 
@@ -249,7 +249,7 @@ code {
 .flip-card-back {
   background-image: url('./assets/img/treepic.jpeg');
   overflow-y: scroll;
-  background-size:cover;
+  background-size: cover;
   background-color: #bbb;
   color: white;
   transform: rotateY(180deg);
@@ -258,14 +258,14 @@ code {
 .profileimg {
   width: 65%;
   height: 50%;
-  border-top: 6px solid #474545c0;
-  border-bottom: 6px solid #474545c0;
+  
+  border-bottom: 6px solid white;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
 }
 
 .thatg {
-  margin-top: -5px;
+  margin-top: -10px;
 }
 
 .para {
@@ -285,6 +285,8 @@ code {
   margin-top: 0px;
   margin-bottom: 10px;
 }
+
+
 
 
 
@@ -458,11 +460,11 @@ nav {
 
 #About{
   margin-top: 35px;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin: auto;
     --b: 3px;   /* border thickness */
     --s: .45em; /* size of the corner */
-    --color: #8a8a8a;
+    --color: #f3f3f3;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
     padding: calc(.5em + var(--s)) calc(.9em + var(--s));
     color: var(--color);
     --_p: var(--s);
@@ -490,10 +492,7 @@ nav {
     background: var(--color);
     color: #fff;
   }
-  .skill {
-    
-    position: relative;
-  }
+  
   .skill .item {
     border-radius: 20px;
     box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
@@ -523,14 +522,14 @@ nav {
   }
   
   .skill-bx {
-    background-color: #5a5858;
+    background-color:transparent;
     border-radius: 64px;
     text-align: center;
-    padding: 60px 50px;
+    padding: 0px 50px;
     margin-top: 10px;
   }
   .skill h5{
-    color: #bbb;
+    color:rgb(31, 51, 58);
   }
   .skill h2 {
     color: rgb(31, 51, 58);
@@ -538,7 +537,8 @@ nav {
     font-weight: 700;
   }
   .skill p {
-      color: #B8B8B8;
+    color: #f3f3f3;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
       font-size: 18px;
       letter-spacing: 0.8px;
       line-height: 1.5em;
@@ -621,7 +621,7 @@ nav {
 .flip-card-back-proj {
   
   background-color: #bbb;
-  color: white;
+  color: #bbb;
   transform: rotateY(180deg);
 }
 
@@ -633,7 +633,7 @@ nav {
 }
 .projecttle{
   padding-top: 30px;
-  color:  rgb(31, 51, 58);
+  color: #bbb;
 }
 
 .projdes{
@@ -647,12 +647,12 @@ nav {
 
 
 .ptitle{
-  margin-top: -20px;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-top: 35px;
+  margin: auto;
     --b: 3px;   /* border thickness */
     --s: .45em; /* size of the corner */
-    --color: #8a8a8a;
+    --color: #f3f3f3;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
     padding: calc(.5em + var(--s)) calc(.9em + var(--s));
     color: var(--color);
     --_p: var(--s);
@@ -682,29 +682,29 @@ nav {
   }
 
 
-.project {
-  margin-top: 35px;
-  padding: 80px 0;
-  position: relative;
-  background-color:black;
-  border-radius: 20px;
-  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
-}
+
 .project h2 {
 	font-size: 45px;
 	font-weight: 700;
   text-align: center;
 }
 .project p {
-  color: #8a8a8a;
+  
+  color: #f3f3f3;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
+  border-radius: 15px;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   margin: 14px auto 30px auto;
   text-align: center;
   width: 56%;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 .project .nav.nav-pills {
+  color: #f3f3f3;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
   width: 72%;
   margin-left:30%;
   border-radius: 10px;
@@ -719,7 +719,7 @@ nav {
   background-color: transparent;
   border-radius: 0;
   padding: 20px 0;
-  color: #8a8a8a;
+  color:  #f3f3f3;
   text-decoration: none;
   width: 100%;
   font-size: 17px;
@@ -742,7 +742,8 @@ nav {
   margin-right: 25%;
     --b: 3px;   /* border thickness */
     --s: .45em; /* size of the corner */
-    --color: #f2f2f2;
+    --color: #f3f3f3;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
     padding: calc(.5em + var(--s)) calc(.9em + var(--s));
     color: var(--color);
     --_p: var(--s);
@@ -869,7 +870,7 @@ button[type=submit] {
   border: 2px solid #1A1A1A;
   border-radius: 15px;
   box-sizing: border-box;
-  color: #9f9797;
+  color: #f3f3f3;
   cursor: pointer;
   display: inline-block;
   font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
