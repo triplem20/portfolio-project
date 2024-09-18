@@ -43,7 +43,7 @@ code {
   }
 
   .Container {
-    margin-left: 5%;
+    margin-left: 15%;
   }
 
   /* Flip cards responsiveness */
@@ -119,13 +119,13 @@ code {
     width: 90%;
   }
 
-
   /* Footer navigation adjustments */
   .footer-nav .nav-item {
     border-left: none;
     display: block;
     margin: 10px 0;
   }
+  /*titles*/
   #About, .ptitle, #connect {
     margin: auto;          /* Center horizontally */
     font-size: 22px;
@@ -159,9 +159,9 @@ code {
   }
 
   .cv a {
-    font-size: 14px;
-    padding: 12px 28px;
-    display: inline-block;
+    font-size: 10px;
+    padding: 5px 5px;
+    display: block;
   }
 }
 
@@ -738,8 +738,7 @@ nav {
 
 #connect{
   margin-top: 35px;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin: auto;
     --b: 3px;   /* border thickness */
     --s: .45em; /* size of the corner */
     --color: #f3f3f3;
