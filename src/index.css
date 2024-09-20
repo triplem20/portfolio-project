@@ -175,6 +175,9 @@ code {
     width: 80%; 
     margin-left: 5%; 
   }
+  .containerc{
+    width: 100%;
+  }
 
  
 }
@@ -866,8 +869,9 @@ label {
   border-radius: 15px;
   background-color: #f2f2f2;
   padding: 20px;
+  margin: auto;
   margin-top: 5%;
-  width: 100%; 
+  width: 60%; 
 }
 
 .col-25, .col-75 {
@@ -922,7 +926,3 @@ button[type=submit]:active {
   transform: translateY(0);
 }
 
-/* Media queries for smaller screens */
-@media screen and (min-width: 768px) {
- 
-}
