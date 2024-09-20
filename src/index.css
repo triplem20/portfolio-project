@@ -13,7 +13,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   background-image: url("background1.webp");
-  background-size: cover;
+  background-size:auto;
 }
 
 html{
@@ -94,7 +94,7 @@ code {
   /* Social icons adjustments */
   .social-icon {
     margin: 10px 0;
-    text-align: left;
+    text-align: center;
     display: block;
   }
 
@@ -163,6 +163,20 @@ code {
     padding: 5px 5px;
     display: block;
   }
+  .col-25 {
+    width: 25%; 
+  }
+
+  .col-75 {
+    width: 75%; 
+  }
+
+  input[type=text], input[type=email], select, textarea {
+    width: 80%; 
+    margin-left: 5%; 
+  }
+
+ 
 }
 
 @keyframes fadeInUp {
@@ -450,7 +464,43 @@ nav {
 .wrap {
   color: #474545c0;
 }
-
+.cv {
+  font-weight: 700;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 18px 34px;
+  font-size: 18px;
+  margin-top: 5px;
+	position: relative;
+	background-color: transparent;
+	transition: 0.3s ease-in-out;
+}
+.cv a {
+  color: #fafafa;
+  text-decoration: none;
+  z-index: 1;
+}
+.cv::before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  background-color: #fff;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+}
+.cv:hover a {
+  transition: 0.3s ease-in;
+  color: #121212;
+}
+.cv:hover::before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
 
 
 
@@ -507,7 +557,7 @@ nav {
 }
 
  
-  .skill .item :hover {
+  .skill .item  :hover {
     box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) ;
     transform: translateY(12px);
     
@@ -529,14 +579,20 @@ nav {
     margin-top: 10px;
   }
   .skill h5{
-    color:rgb(31, 51, 58);
+    color: #f3f3f3;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
   }
   .skill h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
     color: rgb(31, 51, 58);
     font-size: 45px;
     font-weight: 700;
   }
   .skill p {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 15px;
+    background-color: rgb(31, 51, 58);;
     color: #f3f3f3;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
       font-size: 18px;
@@ -689,18 +745,19 @@ nav {
   text-align: center;
 }
 .project p {
-  
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 15px;
+  background-color: rgb(31, 51, 58);;
   color: #f3f3f3;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
-  border-radius: 15px;
   font-size: 18px;
   letter-spacing: 0.8px;
   line-height: 1.5em;
   margin: 14px auto 30px auto;
   text-align: center;
   width: 56%;
-  padding-top: 2%;
-  padding-bottom: 2%;
+ 
 }
 .project .nav.nav-pills {
   color: #f3f3f3;
@@ -783,43 +840,7 @@ nav {
 
 
 
-.cv {
-  font-weight: 700;
-  color: #fff;
-  border: 1px solid #fff;
-  padding: 18px 34px;
-  font-size: 18px;
-  margin-top: 5px;
-	position: relative;
-	background-color: transparent;
-	transition: 0.3s ease-in-out;
-}
-.cv a {
-  color: #fafafa;
-  text-decoration: none;
-  z-index: 1;
-}
-.cv::before {
-  content: "";
-  width: 0%;
-  height: 100%;
-  position: absolute;
-  background-color: #fff;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  transition: 0.3s ease-in-out;
-}
-.cv:hover a {
-  transition: 0.3s ease-in;
-  color: #121212;
-}
-.cv:hover::before {
-	content: "";
-	width: 100%;
-	height: 100%;
-	position: absolute;
-}
+
 
 input[type=text], input[type=email], select, textarea {
   font-weight: 700;
@@ -836,7 +857,8 @@ input[type=text], input[type=email], select, textarea {
 }
 
 label {
-  color: #322e2e;
+  color: rgb(31, 51, 58);
+  font-weight: 700;
   padding: 12px 0; 
 }
 
@@ -844,10 +866,8 @@ label {
   border-radius: 15px;
   background-color: #f2f2f2;
   padding: 20px;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 5%;
-  width: 90%; 
+  width: 100%; 
 }
 
 .col-25, .col-75 {
@@ -904,23 +924,5 @@ button[type=submit]:active {
 
 /* Media queries for smaller screens */
 @media screen and (min-width: 768px) {
-  .col-25 {
-    width: 25%; 
-  }
-
-  .col-75 {
-    width: 75%; 
-  }
-
-  input[type=text], input[type=email], select, textarea {
-    width: 80%; 
-    margin-left: 5%; 
-  }
-
-  .containerc {
-    width: 80%; 
-    margin-left: 10%; 
-    margin-right: 10%;
-    margin-bottom: 20%;
-  }
+ 
 }

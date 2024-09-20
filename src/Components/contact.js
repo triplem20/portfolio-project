@@ -47,7 +47,7 @@ export const Contact = () => {
                   type="text"
                   id="fname"
                   name="from_name"
-                  placeholder="Full Name"
+                  placeholder="Enter Full Name"
                   required
                 />
               </div>
@@ -61,7 +61,7 @@ export const Contact = () => {
                   type="email"
                   id="email"
                   name="from_email"
-                  placeholder="Email"
+                  placeholder="Enter Email"
                   required
                 />
               </div>
