@@ -30,6 +30,7 @@ code {
   body {
     background-color: var(--background-dark);
     color: var(--text-dark);
+    align-content: center;
   }
 }
 
@@ -44,6 +45,7 @@ code {
 
   .Container {
     margin-left: 15%;
+    
   }
 
   /* Flip cards responsiveness */
@@ -692,7 +694,7 @@ nav {
 }
 .projecttle{
   padding-top: 30px;
-  color: #bbb;
+  color:  rgb(31, 51, 58);
 }
 
 .projdes{
