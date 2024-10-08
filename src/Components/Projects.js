@@ -8,6 +8,8 @@ import projimg3 from '../assets/img/destiny_logo.png';
 import proj4 from '../assets/img/football_quiz.png';
 import proj5 from'../assets/img/chatty_logo.png';
 import proj6 from '../assets/img/checkmate_logo.png';
+import proj7 from '../assets/img/notes.png';
+import proj8 from '../assets/img/ttp.png';
 
 export const Projects = () => {
   const primarySectionRef = useRef(null);
@@ -73,7 +75,22 @@ export const Projects = () => {
     },
 
   ];
+  const otherProjects = [
+    {
+      title: 'Notes App',
+      description: 'a simple web module that takes user text and converts it to speech, in which the user has multiple available voices',
+      imgUrl: proj7,
+    },
+    {
+      title: 'Text To Speech',
+      description: 'A football-based quiz game which includes multiple true or false questions of different categories.',
+      imgUrl: proj8,
+    },
+ 
 
+  ];
+
+  
   return (
     <div className='Container'>
       <section className='project' id='project'>
@@ -155,13 +172,29 @@ export const Projects = () => {
               </Tab.Pane>
 
               <Tab.Pane eventKey='third'>
-                <div ref={otherSectionRef}>
+                
                   <br></br>
                   <br></br>
                   <br></br>
+                  <div ref={otherSectionRef}>
                   <p>
                     Here you can find a collection of various other projects that do not fit into the primary categories but are still worth mentioning. Some might be side projects, experiments, or older works.
                   </p>
+                  <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
+                    {otherProjects.map((project, index) => (
+                      <div key={index} className="flip-card-proj">
+                        <div className="flip-card-inner-proj">
+                          <div className="flip-card-front-proj">
+                            <img className="projimg" src={project.imgUrl} alt={project.title} />
+                            <h5 className="projecttle">{project.title}</h5>
+                          </div>
+                          <div className="flip-card-back-proj">
+                            <h4 className="projdes">{project.description}</h4>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
+                  </Carousel>
                 </div>
               </Tab.Pane>
             </Tab.Content>
