@@ -10,6 +10,7 @@ import proj5 from'../assets/img/chatty_logo.png';
 import proj6 from '../assets/img/checkmate_logo.png';
 import proj7 from '../assets/img/notes.png';
 import proj8 from '../assets/img/ttp.png';
+import proj9 from '../assets/img/search_engine.png'
 
 export const Projects = () => {
   const primarySectionRef = useRef(null);
@@ -78,13 +79,18 @@ export const Projects = () => {
   const otherProjects = [
     {
       title: 'Notes App',
-      description: 'a simple web module that takes user text and converts it to speech, in which the user has multiple available voices',
+      description: 'a simple web aplication module that takes user text and converts it to speech, in which the user has multiple available voices',
       imgUrl: proj7,
     },
     {
       title: 'Text To Speech',
-      description: 'A football-based quiz game which includes multiple true or false questions of different categories.',
+      description:'A simple web application module which user can use to add notes, delete notes and update their notes.',
       imgUrl: proj8,
+    },
+    {
+      title: 'Image World',
+     description:'A simple web application module that consists of a image search engine, which user can type some text and get images related to their input.',
+      imgUrl: proj9,
     },
  
 
