@@ -51,7 +51,7 @@ function Main() {
     <>
     <center>
       <div className='Container'>
-        <div className="flip-card">
+        {/* <div className="flip-card">
           <div className="flip-card-inner">
             <div className="flip-card-front">
               <img className="profileimg" src={profile} alt="Profile" />
@@ -63,6 +63,19 @@ function Main() {
               <h4 className="para">An Information Technology graduate with a background in programming, networking, and system management. Seeking internships and collaborative projects to drive innovation and expand my expertise. Passionate about problem-solving, contributing to fresh ideas, and staying ahead of emerging technologies.</h4>
             </div>
           </div>
+        </div> */}
+
+<div class="book">
+            <div class="cover">
+            <img className="profileimg" src={profile} alt="Profile" />
+              <h3 id="home"><span className="wrap">{text}</span></h3>
+              <h2 className="name">Mustafa Mansour</h2>
+              <h4 className='thatg'>We love that guy!</h4>
+            </div>
+            <div class="content">
+            <h5 className="para">An Information Technology graduate with a background in programming, networking, and system management. Seeking internships and collaborative projects to drive innovation and expand my expertise. Passionate about problem-solving, contributing to fresh ideas, and staying ahead of emerging technologies.</h5>
+
+            </div>
         </div>
       </div>
 
