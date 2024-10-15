@@ -73,7 +73,8 @@ function Main() {
               <h4 className='thatg'>We love that guy!</h4>
             </div>
             <div class="content">
-            <h5 className="para">An Information Technology graduate with a background in programming, networking, and system management. Seeking internships and collaborative projects to drive innovation and expand my expertise. Passionate about problem-solving, contributing to fresh ideas, and staying ahead of emerging technologies.</h5>
+              <h3>Hello There!</h3>
+            <h5 className="para">I'm an Information Technology graduate with a background in programming, networking, and system management. Seeking internships and collaborative projects to drive innovation and expand my expertise. Passionate about problem-solving, contributing to fresh ideas, and staying ahead of emerging technologies.</h5>
 
             </div>
         </div>
