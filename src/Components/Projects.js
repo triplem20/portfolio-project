@@ -11,6 +11,7 @@ import proj6 from '../assets/img/checkmate_logo.png';
 import proj7 from '../assets/img/notes.png';
 import proj8 from '../assets/img/ttp.png';
 import proj9 from '../assets/img/search_engine.png'
+import proj10 from '../assets/img/activityfinder.png'
 
 export const Projects = () => {
   const primarySectionRef = useRef(null);
@@ -49,6 +50,11 @@ export const Projects = () => {
       title: 'Sky Watch',
       description: 'A weather forecast application module that gives the user the temperature and other weather details at their current location, and also at a selected city or location.',
       imgUrl: projimg2,
+    },
+    {
+      title: 'Activity Finder',
+      description: 'a web application module in which users locations are defined, and then nearby activities are fetched with the help of an API, and routes for the selected activity is also given. Activities are also filtered in two ways and one of the filtering is defined according to the users mood. Another feature is users can create an activity on their own.',
+      imgUrl: proj10,
     },
     
   ];
