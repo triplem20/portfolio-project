@@ -6,7 +6,7 @@ import css from '../assets/img/css2icon.jpeg';
 import js from '../assets/img/jsicon.jpeg';
 import flutter from '../assets/img/fluttericon.jpeg';
 import firebase from '../assets/img/firebaseicon.jpeg';
-
+import sql from '../assets/img/sql.png';
 
 
 
@@ -62,6 +62,10 @@ function AboutMe(){
                             <div className="item">
                                 <img src={firebase} alt="Image" />
                                 <h5>Firebase</h5>
+                            </div>
+                            <div className="item">
+                                <img src={sql} alt="Image" />
+                                <h5>SQL</h5>
                             </div>
                         </Carousel>
                     </div>
