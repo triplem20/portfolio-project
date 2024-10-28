@@ -35,20 +35,20 @@ code {
 }
 
 /* Global adjustments for mobile phones */
-@media only screen and (max-width: 500px) {
+@media only screen and (min-width: 300px) {
 
-  /* Body adjustments */
+
   body {
     margin: 10px;
     font-size: 14px;
   }
 
   .Container {
-    margin-left: 15%;
+    margin-left: 10%;
     
   }
 
-  /* Flip cards responsiveness */
+  
   .flip-card {
     margin-left: auto;
     margin-right: auto;
@@ -63,28 +63,28 @@ code {
     height: 100%; /* Ensure the inner card matches the flip-card height */
   }
 
-  /* Adjust text and spacing */
+  
   .para {
     font-size: 12px;
   }
 
-  /* Adjust profile image */
+
   .profileimg {
     width: 60%;
     height: auto;
   }
 
-  /* Flip card images and content */
+  
   .projimg {
     width: 80px;
     height: 80px;
   }
 
-  /* Navbar responsiveness */
+ 
   nav > .nav-item {
     flex-direction: row;
     align-items: start;
-    padding: 5px;
+    padding: 3px;
   }
 
   .nav-item {
@@ -93,21 +93,20 @@ code {
     text-align: left;
   }
 
-  /* Social icons adjustments */
+  
   .social-icon {
     margin: 10px 0;
     text-align: center;
     display: block;
   }
 
-  /* Buttons and text in nav */
+ 
   .navbar-text button {
     width: 100%;
     padding: 12px 0;
     font-size: 16px;
   }
 
-  /* Project section adjustments */
   .project {
     padding: 20px 0;
   }

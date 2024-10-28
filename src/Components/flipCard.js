@@ -7,13 +7,13 @@ function Main() {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState(''); // Letter displayed
-  const displayedWd = ["Web Developer", "Flutter Developer"]; // Words to be displayed
-  const period = 2000; // Amount of time between each word
-  const [delta, setDelta] = useState(300 - Math.random() * 700); // Amount of time between each letter
+  const displayedWd = ["Web Developer", "Flutter Developer","FrontEnd Developer"]; // Words to be displayed
+  const period = 1000; // Amount of time between each word
+  const [delta, setDelta] = useState(300 - Math.random() * 100); // Amount of time between each letter
 
   // Display a message when the component mounts
   useEffect(() => {
-    toast.info('Welcome! Please Rotate the screen For a better view if Using Your Mobile.', {
+    toast.info('Welcome! Please Rotate the screen  or Zoom  For a better view if Using Your Mobile.(Site still under developmet)', {
       position: 'top-right'
     });
   }, []);
