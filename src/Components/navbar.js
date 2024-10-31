@@ -3,7 +3,7 @@ import React from 'react';
 import insta from '../assets/img/instaicon.jpeg';
 import git from '../assets/img/githubicon.jpeg';
 import linkd from'../assets/img/linkedinicon.jpeg';
-import CV from '../assets/cv1.pdf';
+import CV from '../assets/Mustafacv.pdf';
 
     let myDate = new Date();
     let hours= myDate.getHours();
