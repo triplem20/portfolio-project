@@ -23,6 +23,7 @@ function NavBar(){
 
     return(
        <>
+       <div className='Containerbar'>
        <h1 className='message'>Good {message}! </h1>
        <nav>
             <Link to='/' className="nav-item">Home</Link>
@@ -40,7 +41,7 @@ function NavBar(){
               </div>
               </span>
         </nav>
-       
+        </div>
         
         </>
     );

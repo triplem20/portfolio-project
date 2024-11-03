@@ -33,7 +33,7 @@ export const Contact = () => {
 
   return (
     <>
-    <center>
+    
       <div className='Container'>
         <h1 id="connect">Let's Connect!</h1>
 
@@ -96,7 +96,7 @@ export const Contact = () => {
       </nav> */}
 
       <ToastContainer />
-      </center>
+      
     </>
   );
 };

@@ -49,7 +49,7 @@ function Main() {
 
   return (
     <>
-    <center>
+   
       <div className='Container'>
         {/* <div className="flip-card">
           <div className="flip-card-inner">
@@ -82,7 +82,7 @@ function Main() {
 
       {/* ToastContainer should be placed here */}
       <ToastContainer />
-      </center>
+      
     </>
   );
 }
