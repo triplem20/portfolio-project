@@ -56,11 +56,7 @@ code {
 
 
   
-    .Container {
-      
-      
-      
-    }
+    
 
 
  
@@ -573,6 +569,7 @@ nav {
   background-color: #bbb;
   color: #bbb;
   transform: rotateY(180deg);
+  overflow-y: scroll;
 }
 
 .projimg{
@@ -656,6 +653,8 @@ nav {
  
 }
 .project .nav.nav-pills {
+  position: relative;
+  margin: 10px auto;
   margin-left: 30%;
   color: #f3f3f3;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 2);
@@ -664,6 +663,7 @@ nav {
   overflow: hidden;
 }
 .project  .nav-item {
+ 
   width: 150px;
   
   
@@ -682,6 +682,7 @@ nav {
   transition: 0.3s ease-in-out;
   text-align: center;
   z-index: 0;
+  margin: 10px auto;
 }
 
 
