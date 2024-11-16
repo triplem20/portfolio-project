@@ -77,6 +77,7 @@ code {
 .Container{
   margin: 20px auto;
   padding: 10px;
+  animation:  fadeInUp 1s linear ;
 }
 .Containerbar{
    margin: 20px auto;
