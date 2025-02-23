@@ -10,8 +10,9 @@ import proj5 from'../assets/img/chatty_logo.png';
 import proj6 from '../assets/img/checkmate_logo.png';
 import proj7 from '../assets/img/notes.png';
 import proj8 from '../assets/img/ttp.png';
-import proj9 from '../assets/img/search_engine.png'
-import proj10 from '../assets/img/activityfinder.png'
+import proj9 from '../assets/img/search_engine.png';
+import proj10 from '../assets/img/activityfinder.png';
+import proj11 from '../assets/img/SIA.png';
 
 export const Projects = () => {
   const primarySectionRef = useRef(null);
@@ -47,9 +48,9 @@ export const Projects = () => {
       imgUrl: projimg1,
     },
     {
-      title: 'Sky Watch',
-      description: 'A weather forecast application module that gives the user the temperature and other weather details at their current location, and also at a selected city or location.',
-      imgUrl: projimg2,
+      title: 'SIA SMS',
+      description: 'SIA Student Management System (SMS) is a comprehensive platform designed to streamline school administration and enhance the learning experience. It includes an Admin Panel for managing student and teacher registrations, class details, school events, and exam results, with automated account creation for new users. The Teacher Panel allows teachers to add notes and assignments for their assigned subjects, view school events, and submit student exam results. The Student Panel enables students to access subjects, study materials, school events, class timetables, and exam results. Secure authentication and role-based access control ensure data security and user-specific access.',
+      imgUrl: proj11,
     },
     {
       title: 'Activity Finder',
@@ -79,6 +80,11 @@ export const Projects = () => {
       title: 'CheckMate',
       description: 'A todo mobile application module in which users can add delete and update their tasks status.',
        imgUrl: proj6,
+    },
+    {
+      title: 'Sky Watch',
+      description: 'A weather forecast application module that gives the user the temperature and other weather details at their current location, and also at a selected city or location.',
+      imgUrl: projimg2,
     },
 
   ];
