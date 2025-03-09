@@ -41,7 +41,7 @@ function AboutMe(){
             <div className="row">
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
-                        <h2>Skills</h2>
+                       
                         <p>Frameworks, programming languages, and other technologies and platforms I have experience with.<br></br> Still learning more...</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
