@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import profile from '../assets/img/profile2.jpeg';
+import profile from '../assets/img/profile1.png';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -7,7 +7,7 @@ function Main() {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState(''); // Letter displayed
-  const displayedWd = ["Web Developer", "Flutter Developer","FrontEnd Developer"]; // Words to be displayed
+  const displayedWd = ["Web Developer", "Flutter Developer","FrontEnd Developer","FullStack Developer"]; // Words to be displayed
   const period = 1000; // Amount of time between each word
   const [delta, setDelta] = useState(300 - Math.random() * 100); // Amount of time between each letter
 
