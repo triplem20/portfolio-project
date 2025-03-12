@@ -47,12 +47,72 @@ code {
 
 
 /* Responsive Font and Element Adjustments */
+/* Default styles for laptops/desktops */
+body {
+  font-size: 16px; /* Default font size */
+  line-height: 1.5;
+  font-family: Arial, sans-serif;
+}
+
+/* Headings */
+h1 {
+  font-size: 2.5rem; /* 40px */
+}
+h2 {
+  font-size: 2rem; /* 32px */
+}
+h3 {
+  font-size: 1.75rem; /* 28px */
+}
+h4 {
+  font-size: 1.5rem; /* 24px */
+}
+h5 {
+  font-size: 1.25rem; /* 20px */
+}
+h6 {
+  font-size: 1rem; /* 16px */
+}
+
+/* Paragraphs and general text */
+p {
+  font-size: 1rem; /* 16px */
+}
+
+/* Responsive styles for smaller screens (phones) */
 @media screen and (max-width: 600px) {
   body {
-    overflow-x:visible; 
-    font-size: 10px; 
+    font-size: 14px; 
   }
+
+  h1 {
+    font-size: 2rem; /* 32px */
+  }
+  h2 {
+    font-size: 1.75rem; /* 28px */
+  }
+  h3 {
+    font-size: 1.5rem; /* 24px */
+  }
+  h4 {
+    font-size: 1.25rem; /* 20px */
+  }
+  h5 {
+    font-size: 1.125rem; /* 18px */
+  }
+  h6 {
+    font-size: 1rem; /* 16px */
+  }
+
+  p {
+    font-size: 0.875rem; /* 14px */
+  }
+  #fname, #subject, #email {
+    font-size: 10px;
+  }
+  
 }
+
 
 @keyframes fadeInUp {
   from {
@@ -127,6 +187,7 @@ code {
   color: #0a0909;
   text-align: left;
   left: 10px;
+  
 }
 
 .name {
@@ -157,6 +218,7 @@ code {
   color: #000;
   text-align: center;
   animation:  updown 3s linear infinite;
+  
 }
 
 .book:hover .cover{
@@ -548,6 +610,7 @@ ul.topnav li.right {
   background-color:  rgb(200, 203, 203);
   color: black;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 16px;
 }
 
 .projdes{
@@ -556,6 +619,7 @@ ul.topnav li.right {
   padding-right: 5px;
   padding-top: 10px;
   color:  rgb(31, 51, 58);
+  font-size: 16px;
 }
 
 .projects-tabs{

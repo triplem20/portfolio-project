@@ -204,7 +204,7 @@ export const Projects = () => {
                         <div className="flip-card-inner-proj">
                           <div className="flip-card-front-proj">
                             <img className="projimg" src={project.imgUrl} alt={project.title} />
-                            <h5 className="projecttle">{project.title}</h5>
+                            <p className="projecttle">{project.title}</p>
                           </div>
                           <div className="flip-card-back-proj">
                             <h4 className="projdes">{project.description}</h4>

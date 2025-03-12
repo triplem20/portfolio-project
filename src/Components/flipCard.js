@@ -69,12 +69,12 @@ function Main() {
             <div class="cover">
             <img className="profileimg" src={profile} alt="Profile" />
               <h3 id="home"><span className="wrap">{text}</span></h3>
-              <h2 className="name">Mustafa Mansour</h2>
-              <h4 className='thatg'>We love that guy!</h4>
+              <h5 className="name">Mustafa Mansour</h5>
+              <h5 className='thatg'>We love that guy!</h5>
             </div>
             <div class="content">
               <h3>Hello There!</h3>
-            <h5 className="para">I'm an Information Technology graduate with a background in programming, networking, and system management. Seeking internships and collaborative projects to drive innovation and expand my expertise. Passionate about problem-solving, contributing to fresh ideas, and staying ahead of emerging technologies.</h5>
+            <p className="para">I'm an Information Technology graduate with a background in programming, networking, and system management. Seeking internships and collaborative projects to drive innovation and expand my expertise. Passionate about problem-solving, contributing to fresh ideas, and staying ahead of emerging technologies.</p>
 
             </div>
         </div>

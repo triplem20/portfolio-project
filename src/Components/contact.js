@@ -75,7 +75,7 @@ export const Contact = () => {
                 <textarea
                   id="subject"
                   name="description"
-                  placeholder="Write something..."
+                  placeholder="Request Decsription..."
                   required
                 ></textarea>
               </div>
