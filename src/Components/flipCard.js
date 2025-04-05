@@ -3,6 +3,7 @@ import profile from '../assets/img/profile1.png';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+
 function Main() {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -50,35 +51,25 @@ function Main() {
   return (
     <>
    
-      <div className='Container'>
-        {/* <div className="flip-card">
-          <div className="flip-card-inner">
-            <div className="flip-card-front">
-              <img className="profileimg" src={profile} alt="Profile" />
-              <h3 id="home"><span className="wrap">{text}</span></h3>
-              <h2 className="name">Mustafa Mansour</h2>
-              <h4 className='thatg'>We love that guy!</h4>
-            </div>
-            <div className="flip-card-back">
-              <h4 className="para">An Information Technology graduate with a background in programming, networking, and system management. Seeking internships and collaborative projects to drive innovation and expand my expertise. Passionate about problem-solving, contributing to fresh ideas, and staying ahead of emerging technologies.</h4>
-            </div>
-          </div>
-        </div> */}
+   <div className="Container">
 
-<div class="book">
-            <div class="cover">
-            <img className="profileimg" src={profile} alt="Profile" />
-              <h3 id="home"><span className="wrap">{text}</span></h3>
-              <h5 className="name">Mustafa Mansour</h5>
-              <h5 className='thatg'>We love that guy!</h5>
-            </div>
-            <div class="content">
-              <h3>Hello There!</h3>
-            <p className="para">I'm an Information Technology graduate with a background in programming, networking, and system management. Seeking internships and collaborative projects to drive innovation and expand my expertise. Passionate about problem-solving, contributing to fresh ideas, and staying ahead of emerging technologies.</p>
+  {/* Foreground Card */}
+  <div className="book">
+    <div className="cover">
+      <img className="profileimg" src={profile} alt="Profile" />
+      <h3 id="home"><span className="wrap">{text}</span></h3>
+      <h5 className="name">Mustafa Mansour</h5>
+      <h5 className="thatg">We love that guy!</h5>
+    </div>
+    <div className="content">
+      <h3>Hello There!</h3>
+      <p className="para">
+        I'm an Information Technology graduate with a background in programming, networking, and system management. Seeking internships and collaborative projects to drive innovation and expand my expertise. Passionate about problem-solving, contributing to fresh ideas, and staying ahead of emerging technologies.
+      </p>
+    </div>
+  </div>
+</div>
 
-            </div>
-        </div>
-      </div>
 
       {/* ToastContainer should be placed here */}
       <ToastContainer />

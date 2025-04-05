@@ -3,6 +3,7 @@ import emailjs from 'emailjs-com';
 import { Link } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 export const Contact = () => {
   const form = useRef();
@@ -38,62 +39,67 @@ export const Contact = () => {
         <h1 id="connect">Let's Connect!</h1>
 
         <div className="containerc">
-          <form ref={form} onSubmit={sendEmail}>
-            <div className="row">
-              <div className="col-25">
-                <label htmlFor="fname">Full Name:</label>
-              </div>
-              <div className="col-75">
-                <input
-                  type="text"
-                  id="fname"
-                  name="from_name"
-                  placeholder="Enter Full Name"
-                  required
-                />
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-25">
-                <label htmlFor="email">Email:</label>
-              </div>
-              <div className="col-75">
-                <input
-                  type="email"
-                  id="email"
-                  name="from_email"
-                  placeholder="Enter Email"
-                  required
-                />
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-25">
-                <label htmlFor="subject">Request Description:</label>
-              </div>
-              <div className="col-75">
-                <textarea
-                  id="subject"
-                  name="description"
-                  placeholder="Request Decsription..."
-                  required
-                ></textarea>
-              </div>
-            </div>
-            <br />
-            <div className="row">
-              <button type="submit">Send</button>
-            </div>
-          </form>
-        </div>
-      </div>
+  {/* Lottie background */}
+  <div className="lottie-bg">
+    <DotLottieReact
+      src="https://lottie.host/427a0981-9f0f-4546-b56c-6c67fed077d5/qUU1khDe3l.lottie"
+      loop
+      autoplay
+    />
+  </div>
 
-      {/* <nav className='footer-nav'>
-        <Link to='/' className="nav-item">Home</Link>
-        <Link to='About' className="nav-item">About</Link>
-        <Link to='projects' className="nav-item">Projects</Link>
-        <Link to='contact' className="nav-item">Contact</Link>
-      </nav> */}
+  {/* Form content */}
+  <form ref={form} onSubmit={sendEmail}>
+    <div className="row">
+      <div className="col-25">
+        <label htmlFor="fname">Full Name:</label>
+      </div>
+      <div className="col-75">
+        <input
+          type="text"
+          id="fname"
+          name="from_name"
+          placeholder="Enter Full Name"
+          required
+        />
+      </div>
+    </div>
+    <div className="row">
+      <div className="col-25">
+        <label htmlFor="email">Email:</label>
+      </div>
+      <div className="col-75">
+        <input
+          type="email"
+          id="email"
+          name="from_email"
+          placeholder="Enter Email"
+          required
+        />
+      </div>
+    </div>
+    <div className="row">
+      <div className="col-25">
+        <label htmlFor="subject">Request Description:</label>
+      </div>
+      <div className="col-75">
+        <textarea
+          id="subject"
+          name="description"
+          placeholder="Request Description..."
+          required
+        ></textarea>
+      </div>
+    </div>
+    <br />
+    <div className="row">
+      <button type="submit">Send</button>
+    </div>
+  </form>
+</div>
+</div>
+
+    
 
       <ToastContainer />
       

@@ -29,8 +29,9 @@ body {
   font-size: 16px;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  background-image: url("background1.webp");
-  background-size:auto;
+ background: #CFCFCF;
+background: radial-gradient(circle farthest-corner at center center, #CFCFCF 1%, #000000 63%);
+
   
 }
 
@@ -212,8 +213,11 @@ p {
   margin-bottom: 10px;
 } 
 
+
+
 .book{
   position: relative;
+  z-index: 2;
   width: 260px;
   height: 350px;
   max-width: 300px; 
@@ -303,6 +307,7 @@ p {
 .project .nav.nav-pills .nav-link:hover {
   color: #ddd;
   background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
 }
 
 /* General Navigation List */
@@ -322,7 +327,7 @@ p {
 
 .nav-list .nav-item {
   display: block;
-  color: black;
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -331,7 +336,7 @@ p {
 }
 
 .nav-list .nav-item:hover {
-  color: #ddd;
+  color: #393838;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 15px;
 }
@@ -413,6 +418,7 @@ ul.topnav li.right {
   display: none;
   background: none;
   border: none;
+  color: white;
   font-size: 2rem;
   cursor: pointer;
 }
@@ -444,6 +450,7 @@ ul.topnav li.right {
       gap: 0.5rem;
   }
 }
+
 
 
 
@@ -812,11 +819,10 @@ ul.topnav li.right {
 input[type=text], input[type=email], select, textarea {
   font-weight: 700;
   color: #322e2e;
-  border: 2px solid #fff;
+  border: 2px solid transparent;
   padding: 10px 5px; 
   font-size: 18px;
-  margin-left: 0; 
-  width: 90%; 
+  width: 100%; 
   background-color: transparent;
   transition: 0.3s ease-in-out;
   text-align: center;
@@ -829,17 +835,41 @@ label {
   padding: 12px 0; 
 }
 
+
 .containerc {
   border-radius: 15px;
-  background-color: #f2f2f2;
+  background-color: transparent;
   padding: 20px;
   margin: auto;
   margin-top: 5%;
   width: 60%; 
+  position: relative;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.9); 
+  z-index: 1;
+  overflow: hidden;
 }
 
+.lottie-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.3; /* Adjust for effect */
+  pointer-events: none;
+}
+
+form {
+  position: relative;
+  z-index: 2;
+  align-items: center;
+}
+
+
 .col-25, .col-75 {
-  float: left;
+  float: center;
   width: 100%; 
   margin-top: 6px;
 }
@@ -867,7 +897,7 @@ button[type=submit], button[type=file] {
   margin: 0;
   min-height: 60px;
   outline: none;
-  padding: 16px 24px;
+  padding: 6px 24px;
   text-align: center;
   text-decoration: none;
   transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
@@ -877,6 +907,7 @@ button[type=submit], button[type=file] {
 }
 
 button[type=submit]:disabled {
+  width: 50%;
   pointer-events: none;
 }
 
