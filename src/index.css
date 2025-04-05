@@ -668,7 +668,7 @@ ul.topnav li.right {
   margin: auto;
     --b: 3px;   /* border thickness */
     --s: .45em; /* size of the corner */
-    --color: black;
+    --color: rgb(255, 255, 255);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     padding: calc(.5em + var(--s)) calc(.9em + var(--s));
     color: var(--color);
