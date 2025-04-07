@@ -659,6 +659,7 @@ ul.topnav li.right {
   color: black;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-size: 16px;
+  opacity: 0.5;
 }
 
 .projdes{
@@ -745,6 +746,7 @@ ul.topnav li.right {
   background-color: transparent; 
   padding: 10px 0;
   z-index: 10; 
+  
 }
 
 .project .nav-item {
@@ -767,6 +769,7 @@ ul.topnav li.right {
   text-align: center;
   display: block; 
   z-index: 11; 
+  border-bottom: 1px solid #ddd;
 }
 
 .project .nav.nav-pills .nav-link:hover {

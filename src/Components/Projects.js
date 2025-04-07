@@ -118,6 +118,7 @@ export const Projects = () => {
               <h1 className='ptitle'>Projects</h1>
               <p>
                 These are the projects I have worked on, some are still under development. Please view them on my Github account and provide some feedback.
+              Tab or hover on the project to view its description.
               </p>
             </Col>
           </Row>
