@@ -13,11 +13,11 @@ function Main() {
   const [delta, setDelta] = useState(300 - Math.random() * 100); // Amount of time between each letter
 
   // Display a message when the component mounts
-  useEffect(() => {
-    toast.info('Welcome! Please Rotate the screen For a better view if Using Your Mobile.', {
-      position: 'top-right'
-    });
-  }, []);
+  // useEffect(() => {
+  //   toast.info('Welcome! Please Rotate the screen For a better view if Using Your Mobile.', {
+  //     position: 'top-right'
+  //   });
+  // }, []);
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -56,6 +56,7 @@ function Main() {
   {/* Foreground Card */}
   <div className="book">
     <div className="cover">
+    <h6> Tap Here</h6>
       <img className="profileimg" src={profile} alt="Profile" />
       <h3 id="home"><span className="wrap">{text}</span></h3>
       <h5 className="name">Mustafa Mansour</h5>

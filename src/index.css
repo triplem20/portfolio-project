@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Orbitron:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 body {
     font-family: 'Nunito', sans-serif;
@@ -59,8 +60,6 @@ code {
 
 
 
-/* Responsive Font and Element Adjustments */
-/* Default styles for laptops/desktops */
 body {
   font-size: 16px; /* Default font size */
   line-height: 1.5;
@@ -84,7 +83,7 @@ h5 {
   font-size: 1.25rem; /* 20px */
 }
 h6 {
-  font-size: 1rem; /* 16px */
+  font-size: 10px; /* 16px */
 }
 
 /* Paragraphs and general text */
@@ -114,11 +113,15 @@ p {
     font-size: 1.125rem; /* 18px */
   }
   h6 {
-    font-size: 1rem; /* 16px */
+    font-size: 10px; 
   }
 
   p {
-    font-size: 0.875rem; /* 14px */
+    font-size: 0.875rem;
+      font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #333; /* A darker grey for better readability */
+  margin-bottom: 20px;/* 14px */
   }
   #fname, #subject, #email {
     font-size: 10px;
@@ -236,6 +239,13 @@ p {
   animation:  updown 3s linear infinite;
   
 }
+.para{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333; /* A darker grey for better readability */
+  margin-bottom: 20px;
+}
 
 .book:hover .cover{
   transition: all 0.5s;
@@ -339,6 +349,7 @@ p {
   color: #393838;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 15px;
+  border-bottom: 1px solid #ddd;
 }
 
 /* Right-side Navigation */
@@ -759,8 +770,9 @@ ul.topnav li.right {
 }
 
 .project .nav.nav-pills .nav-link:hover {
-  color: #ddd;
+
   background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid #ddd;
 }
 
 
