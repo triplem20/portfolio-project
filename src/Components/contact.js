@@ -52,7 +52,7 @@ export const Contact = () => {
   <form ref={form} onSubmit={sendEmail}>
     <div className="row">
       <div className="col-25">
-        <label htmlFor="fname">Full Name:</label>
+      
       </div>
       <div className="col-75">
         <input
@@ -66,7 +66,7 @@ export const Contact = () => {
     </div>
     <div className="row">
       <div className="col-25">
-        <label htmlFor="email">Email:</label>
+       
       </div>
       <div className="col-75">
         <input
@@ -80,7 +80,7 @@ export const Contact = () => {
     </div>
     <div className="row">
       <div className="col-25">
-        <label htmlFor="subject">Request Description:</label>
+       
       </div>
       <div className="col-75">
         <textarea

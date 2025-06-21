@@ -54,6 +54,16 @@ function Main() {
    <div className="Container">
 
   {/* Foreground Card */}
+  
+
+  <div class="accents">
+  <div class="acc-card"></div>
+  <div class="acc-card"></div>
+  <div class="acc-card"></div>
+  <div class="light"></div>
+  <div class="light sm"></div>
+  <div class="top-light"></div>
+</div>
   <div className="book">
     <div className="cover">
     <h6> Tap Here</h6>
