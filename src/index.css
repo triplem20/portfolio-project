@@ -387,11 +387,14 @@ p {
   
 }
 .para{
-  font-family: Lora, serif;
-  font-size: 16px;
-  line-height: 1.6;
+ 	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-family: Lora, serif;
+	font-weight: 200;
+  font-size: 10px;
   color:#fff; 
   margin-bottom: 20px;
+  overflow-y: scroll;
 }
 
 .book:hover .cover{
@@ -826,7 +829,7 @@ ul.topnav li.right {
   padding-left: 5px;
   padding-right: 5px;
   padding-top: 10px;
-  color:  rgb(255, 255, 255);
+  color:  #fff;
   font-size: 16px;
 }
 
