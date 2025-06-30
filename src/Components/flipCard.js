@@ -8,7 +8,7 @@ function Main() {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState(''); // Letter displayed
-  const displayedWd = ["Web Developer", "Flutter Developer","FrontEnd Developer","FullStack Developer"]; // Words to be displayed
+  const displayedWd = ["Web", "Flutter","FrontEnd","FullStack"]; // Words to be displayed
   const period = 1000; // Amount of time between each word
   const [delta, setDelta] = useState(300 - Math.random() * 100); // Amount of time between each letter
 
@@ -68,7 +68,7 @@ function Main() {
     <div className="cover">
     <h6> Tap Here</h6>
       <img className="profileimg" src={profile} alt="Profile" />
-      <h3 id="home"><span className="wrap">{text}</span></h3>
+      <h3 id="home"><span className="wrap">{text} Developer</span></h3>
       <h5 className="name">Mustafa Mansour</h5>
       <h5 className="thatg">We love that guy!</h5>
     </div>
