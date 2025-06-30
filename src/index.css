@@ -223,7 +223,7 @@ p {
   position: absolute;
   left: 0;
   right: 0;
-  top: 20%;
+  top: 25%;
   z-index: 0;
 }
 
@@ -235,7 +235,7 @@ p {
   position: absolute;
   left: 0;
   right: 0;
-  top: 20%;
+  top: 10%;
   margin: auto;
   border-radius: 16px;
   box-shadow: inset 0 2px 2px 0 #e0c9b266,
@@ -262,7 +262,7 @@ p {
   position: absolute;
   left: 0;
   right: calc(0% + 300px);
-  top: 264px;
+  top: 234px;
   margin: auto;
   width: 164px;
   height: 164px;
@@ -386,6 +386,10 @@ p {
  
   
 }
+.content h3{
+  color:  #7e7e7e;
+}
+
 .para{
  	text-transform: uppercase;
 	letter-spacing: 5px;
@@ -606,6 +610,7 @@ ul.topnav li.right {
     transform: translateY(-10px);
     transition: max-height 0.4s ease, opacity 0.6s ease, transform 0.4s ease;
     visibility: hidden;
+    z-index: 1;
   }
 
   .nav.open {
@@ -613,6 +618,7 @@ ul.topnav li.right {
     opacity: 1;
     transform: translateY(0);
     visibility: visible;
+    z-index: 1;
   }
 
   .nav-list {
